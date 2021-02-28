@@ -11,10 +11,10 @@ description: A new Radio on the Web is born. It's inspired by some really cool
   mentor.
 spreaker_embed: <a class="spreaker-player"
   href="https://www.spreaker.com/s/1aeAFQK5Y8zu"
-  data-resource="show_key=1aeAFQK5Y8zu" data-width="100%" data-height="200px"
+  data-resource="show_key=1aeAFQK5Y8zu" data-width="500px" data-height="200px"
   data-theme="dark" data-playlist="false" data-playlist-continuous="false"
-  data-autoplay="false" data-live-autoplay="false" data-chapters-image="true"
-  data-episode-image-position="right" data-hide-logo="false"
+  data-autoplay="true" data-live-autoplay="false" data-chapters-image="true"
+  data-episode-image-position="left" data-hide-logo="true"
   data-hide-likes="false" data-hide-comments="false" data-hide-sharing="false"
   data-hide-download="true">Listen to "La tecnologia oltre gli stereotipi" on
   Spreaker.</a>
