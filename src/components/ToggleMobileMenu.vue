@@ -2,8 +2,10 @@
   <button
     @click="$emit('toggleMobileMenu',!mobileMenuOpen)"
     class="inline-block md:hidden w-8 h-8 bg-gray-200 text-gray-600 p-1"
+    aria-label="toogle mobile menu"
   >
     <svg
+      aria-hidden="true"
       fill="currentColor"
       viewBox="0 0 20 20"
       xmlns="http://www.w3.org/2000/svg"

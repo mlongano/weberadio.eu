@@ -13,8 +13,30 @@ const postcssPlugins = [
 if ( process.env.NODE_ENV === 'production' ) postcssPlugins.push( purgecss( require( './purgecss.config.js' ) ) )
 
 module.exports = {
-  siteName: 'Gridsome',
-  plugins: [],
+  siteName: 'Webe Radio',
+  templates: {
+    Podcast: '/:title',
+    Tag: '/tag/:id'
+  },
+
+  plugins: [
+    {
+      // Create podcasts from markdown files
+      use: '@gridsome/source-filesystem',
+      options: {
+        typeName: 'Podcast',
+        path: 'content/podcasts/*.md',
+        refs: {
+          // Creates a GraphQL collection from 'tags' in front-matter and adds a reference.
+          tags: {
+            typeName: 'Tag',
+            create: true
+          }
+        }
+      }
+    },
+
+  ],
   css: {
     loaderOptions: {
       postcss: {
