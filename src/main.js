@@ -4,10 +4,11 @@
 require( '~/main.css' );
 
 import DefaultLayout from '~/layouts/Default.vue';
+import VueMarkdown from 'vue-markdown-render'
 
 export default function (Vue, { router, head, isClient }) {
   // Set default layout as a global component
-  Vue.component( 'Layout', DefaultLayout );
+  Vue.component( 'Layout', DefaultLayout , VueMarkdown);
   head.link.push( {
     rel: 'stylesheet',
     href: 'https://fonts.googleapis.com/css2?family=Roboto'

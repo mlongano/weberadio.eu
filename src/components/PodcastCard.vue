@@ -1,27 +1,25 @@
 <template>
-  <div class="podcast-card content-box" :class="{'podcast-card--has-poster' : podcast.poster}">
-    <div class="podcast-card__header">
-      <g-image alt="Cover image" v-if="podcast.cover_image" class="post-card__image" :src="podcast.cover_image" />
-    </div>
-    <div class="podcast-card__content">
-      <h2 class="podcast-card__title" v-html="podcast.title" />
-      <p class="podcast-card__description" v-html="podcast.description" />
+
+  <div class="max-w-sm rounded overflow-hidden shadow-lg">
+      <g-image alt="Cover image" v-if="podcast.cover_image" class="w-full" :src="podcast.cover_image" />
+    <div class="px-6 py-4">
+      <div class="font-bold text-xl mb-2" v-html="podcast.title" />
+      <div class="text-gray-700 text-base"><vue-markdown :source="podcast.description"/> </div>
 
       <Tags :post="podcast" />
-
-      <g-link class="podcast-card__link" :to="podcast.path">Link</g-link>
+      <g-link class="w-1/2 flex items-center justify-center rounded-md bg-black text-white" :to="podcast.path">Link</g-link>
     </div>
   </div>
 </template>
 
 <script>
-import Tags from '~/components/Tags'
+import Tags from "~/components/Tags";
 
 export default {
   components: {
-    Tags
+    Tags,
   },
-  props: ['podcast'],
-}
+  props: ["podcast"],
+};
 </script>
 
