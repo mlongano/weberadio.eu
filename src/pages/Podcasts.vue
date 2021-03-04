@@ -37,6 +37,11 @@ query {
   }
 }
 </page-query>
+<style>
+div.bg-cover {
+  background-image: none;
+}
+</style>
 
 <script>
 import PodcastCard from '~/components/PodcastCard.vue'

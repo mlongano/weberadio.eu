@@ -1,11 +1,18 @@
 <template>
-  <div class="font-sans text-gray-800 leading-normal">
+  <div class="px-20 h-screen bg-cover bg-center font-sans text-gray-800 leading-normal border-t-8 border-red-800">
     <header
-      class="flex flex-wrap flex-row justify-between items-begins md:items-left md:space-x-4 py-6 px-6 relative border-t-8 border-red-800"
+      class="flex flex-wrap flex-row justify-between items-begins md:items-left md:space-x-4 py-6 px-6 relative"
     >
-      <a href="/"
-        ><img src="../../static/images/logo.png" alt="Logo" width="50px"
-      /></a>
+    <div>
+      <a  class="flex justify-start" href="/"
+        >
+        <img class="mr-5" src="@/assets/images/logo.png" alt="Logo" width="50px" style="height:37px"/>
+        <!-- <img class="mr-5" src="../favicon1.png" alt="Logo" width="50px" style="height:50px"/>
+        <img class="mr-5" src="../favicon2.png" alt="Logo" width="50px" style="height:59px"/>
+        <img class="mr-5" src="../favicon3.png" alt="Logo" width="50px" style="height:50px"/>
+        <img class="mr-5" src="../favicon4.png" alt="Logo" width="50px" style="height:75px"/> -->
+        </a>
+        </div>
       <ToggleMobileMenu
         v-bind:mobileMenuOpen="mobileMenuOpen"
         v-on:toggleMobileMenu="toogleMenu($event)"

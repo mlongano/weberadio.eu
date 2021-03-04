@@ -1,14 +1,14 @@
 <template>
   <Layout>
-    <div class="podcast-title">
-      <h1 class="podcast-title__text">
+    <div class="">
+      <h1 class="">
         {{ $page.podcast.title }}
       </h1>
 
     </div>
 
-    <div class="podcast content-box">
-      <div class="podcast__header">
+    <div class="">
+      <div class="">
         <g-image
           alt="Cover image"
           v-if="$page.podcast.cover_image"
@@ -16,17 +16,14 @@
         />
       </div>
 
-      <div class="podcast__content" v-html="$page.podcast.content" />
+      <div class="" v-html="$page.podcast.content" />
 
-      <div class="podcast__footer">
+      <div class="">
         <Tags :post="$page.podcast" />
       </div>
     </div>
 
-    <div class="podcast-comments">
-      <!-- Add comment widgets here -->
-    </div>
-    <div v-html="$page.podcast.spreaker_embed"></div>
+    <div v-html="$page.podcast.spreaker_embed" />
   </Layout>
 </template>
 
