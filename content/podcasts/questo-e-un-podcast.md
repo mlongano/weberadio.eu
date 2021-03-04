@@ -4,11 +4,20 @@ date: 2021-02-04
 published: true
 school: ITT Marconi
 tags:
-  - Podcast
-  - Test
-cover_image: ../../static/images/uploads/radio.jpg
-description: A new Radio on the Web is born. It's inspired by some really cool experiences with Radio and podcasts in Italy. **Sanba Radio** will be our mentor.
-spreaker_embed: <a class="spreaker-player" href="https://www.spreaker.com/episode/43413249" data-resource="episode_id=43413249" data-width="100%" data-height="200px" data-theme="dark" data-playlist="false" data-playlist-continuous="false" data-autoplay="false" data-live-autoplay="false" data-chapters-image="true" data-episode-image-position="right" data-hide-logo="false" data-hide-likes="false" data-hide-comments="false" data-hide-sharing="false" data-hide-download="true">Ascolta "Nat - Parte prima" su Spreaker.</a>
+  - TecnoOltre
+cover_image: ../../static/images/uploads/donald-giannatti-wj1d-qiosee-unsplash.jpg
+description: A new Radio on the Web is born. It's inspired by some really cool
+  experiences with Radio and podcasts in Italy. **Sanba Radio** will be our
+  mentor.
+spreaker_embed: <a class="spreaker-player"
+  href="https://www.spreaker.com/s/1aeAFQK5Y8zu"
+  data-resource="show_key=1aeAFQK5Y8zu" data-width="500px" data-height="200px"
+  data-theme="dark" data-playlist="false" data-playlist-continuous="false"
+  data-autoplay="true" data-live-autoplay="false" data-chapters-image="true"
+  data-episode-image-position="left" data-hide-logo="true"
+  data-hide-likes="false" data-hide-comments="false" data-hide-sharing="false"
+  data-hide-download="true">Listen to "La tecnologia oltre gli stereotipi" on
+  Spreaker.</a>
 ---
 A new static site generator baby is born. It's highly inspired by Gatsby.js (React based) but built on top of Vue.js. We have been working on it for a year and will have a beta ready soon. You can expect this baby to grow up fast!
 
