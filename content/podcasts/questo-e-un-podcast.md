@@ -4,7 +4,7 @@ date: 2021-02-04
 published: true
 school: ITT Marconi
 tags:
-  - TecnoOltre
+  - GirlsTecnoPower
 cover_image: ../../static/images/uploads/donald-giannatti-wj1d-qiosee-unsplash.jpg
 description: A new Radio on the Web is born. It's inspired by some really cool
   experiences with Radio and podcasts in Italy. **Sanba Radio** will be our
