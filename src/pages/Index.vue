@@ -2,7 +2,6 @@
   <Layout>
     <div class="flex justify-items-start ">
     <!-- Learn how to use images here: https://gridsome.org/docs/images -->
-    <g-image class="mr-10" alt="Logo" src="@/assets/images/logo.png" width="135"  style="height:98px"/>
     <!-- <g-image class="mr-10" alt="Logo1" src="@/assets/images/logo1.png" width="135"  style="height:135px"/>
     <g-image class="mr-10" alt="Logo2" src="@/assets/images/logo2.png" width="135"  style="height:27px"/>
     <g-image class="mr-10" alt="Logo3" src="@/assets/images/logo3.png" width="135"  style="height:25px"/>
@@ -20,7 +19,7 @@
 
   </Layout>
 </template>
-<style>
+<style scoped>
 div.bg-cover {
   background-image: url(~@/assets/images/jason-rosewell-ASKeuOZqhYU-unsplash.jpg);
 }

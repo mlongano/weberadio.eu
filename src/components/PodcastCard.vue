@@ -1,17 +1,31 @@
 <template>
 
-  <div class="max-w-sm rounded overflow-hidden shadow-lg">
+  <div class="relative max-w-sm rounded overflow-hidden shadow-lg">
       <g-image alt="Cover image" v-if="podcast.cover_image" class="w-full" :src="podcast.cover_image" />
     <div class="px-6 py-4">
       <div class="font-bold text-xl mb-2" v-html="podcast.title" />
-      <div class="text-gray-700 text-base"><vue-markdown :source="podcast.description"/> </div>
+      <div class="text-gray-700 text-xs" v-html="podcast.description"/>
+      <div class="text-gray-700 text-xs" v-html="podcast.content"/>
 
       <Tags :post="podcast" />
-      <g-link class="w-1/2 flex items-center justify-center rounded-md bg-black text-white" :to="podcast.path">Link</g-link>
+      <g-link class="link w-1/2 flex items-center justify-center rounded-md bg-black text-white" :to="podcast.path">Link</g-link>
     </div>
   </div>
 </template>
+<style>
+.link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.0;
+    overflow: hidden;
+    text-indent: -9999px;
+    z-index: 0;
 
+}
+</style>
 <script>
 import Tags from "~/components/Tags";
 

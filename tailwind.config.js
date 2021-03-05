@@ -5,7 +5,7 @@ module.exports = {
     extend: {},
     fontFamily: {
       sans: [
-        'Roboto',
+        'Lato',
         'ui-sans-serif',
         'system-ui',
         '-apple-system',

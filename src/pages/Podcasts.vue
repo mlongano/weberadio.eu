@@ -19,6 +19,7 @@ query {
         date (format: "D. MMMM YYYY")
         timeToRead
         description
+        content
         spreaker_embed
         cover_image (width: 770, height: 380, blur: 10)
         ...on Podcast {
@@ -37,7 +38,7 @@ query {
   }
 }
 </page-query>
-<style>
+<style scoped>
 div.bg-cover {
   background-image: none;
 }
