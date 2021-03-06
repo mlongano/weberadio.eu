@@ -59,7 +59,7 @@ collections:
         collection: "podcasts"
         search_fields: ['slug', title]
         value_field: "{{slug}}"
-        display_fields: ["{{title}} - {{school}}"]
+        display_fields: ["slug"]
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Date", name: "date", widget: "datetime"}
       - {label: "Published", name: "published", widget: "boolean", default: true}
