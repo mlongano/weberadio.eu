@@ -4,14 +4,14 @@ date: 2021-02-04
 published: true
 cover_image: ../../static/images/uploads/donald-giannatti-wj1d-qiosee-unsplash.jpg
 spreaker_embed: <a class="spreaker-player"
-  href="https://www.spreaker.com/s/1aeAFQK5Y8zu"
-  data-resource="show_key=1aeAFQK5Y8zu" data-width="90%" data-theme="dark"
-  data-playlist="false" data-playlist-continuous="false" data-autoplay="true"
+  href="https://www.spreaker.com/e/1aeAFQK5Y8zu--43678243"
+  data-resource="episode_key=1aeAFQK5Y8zu--43678243" data-width="100%"
+  data-height="200px" data-theme="light" data-playlist="false"
+  data-playlist-continuous="false" data-autoplay="false"
   data-live-autoplay="false" data-chapters-image="true"
-  data-episode-image-position="left" data-hide-logo="true"
+  data-episode-image-position="right" data-hide-logo="false"
   data-hide-likes="false" data-hide-comments="false" data-hide-sharing="false"
-  data-hide-download="true">Listen to "La tecnologia oltre gli stereotipi" on
-  Spreaker.</a>
+  data-hide-download="true">Ascolta "Dott ssa Chiara Ghidini" su Spreaker.</a>
 school: ITT Marconi
 title: Webinar con la dott.ssa Chiara Ghidini
 tags:
