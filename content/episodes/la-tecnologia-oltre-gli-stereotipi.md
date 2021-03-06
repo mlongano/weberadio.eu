@@ -13,7 +13,7 @@ spreaker_embed: <a class="spreaker-player"
   data-hide-download="true">Listen to "La tecnologia oltre gli stereotipi" on
   Spreaker.</a>
 school: ITT Marconi
-title: La tecnologia oltre gli stereotipi
+title: Webinar con la dott.ssa Chiara Ghidini
 tags:
   - girlstechnopower
   - webinar
