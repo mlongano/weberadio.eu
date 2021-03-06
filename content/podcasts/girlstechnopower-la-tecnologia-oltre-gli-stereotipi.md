@@ -1,5 +1,5 @@
 ---
-title: #girlstechnopower: la tecnologia oltre gli stereotipi
+title: girlstechnopower la tecnologia oltre gli stereotipi
 date: 2021-02-04
 published: true
 school: ITT Marconi
