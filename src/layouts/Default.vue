@@ -1,5 +1,5 @@
 <template>
-  <div class="px-20 h-screen bg-cover bg-center font-sans text-gray-800 leading-normal border-t-8 border-red-800">
+  <div class="px-20 h-screen bg-cover bg-center font-sans text-gray-800 leading-normal border-t-8 border-red-800 dark:text-gray-50">
     <header
       class="flex flex-wrap flex-row justify-between items-begins md:items-left md:space-x-4 py-6 px-6 relative"
     >

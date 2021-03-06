@@ -1,15 +1,12 @@
 <template>
   <Layout>
-    <div class="">
-      <h1 class="">
+      <h1 class="text-2xl">
         {{ $page.podcast.title }}
       </h1>
 
-    </div>
 
-    <div class="">
-      <div class="">
-        <g-image
+      <div>
+        <g-image  class="shadow-lg rounded-lg"
           alt="Cover image"
           v-if="$page.podcast.cover_image"
           :src="$page.podcast.cover_image"
@@ -21,7 +18,6 @@
       <div class="">
         <Tags :post="$page.podcast" />
       </div>
-    </div>
 
     <div v-html="$page.podcast.spreaker_embed" />
   </Layout>

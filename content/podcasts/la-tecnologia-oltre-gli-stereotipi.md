@@ -12,7 +12,7 @@ description: Il primo webinar dedicato alla **tecnologia oltre gli stereotipi** 
 
 spreaker_embed: <a class="spreaker-player"
   href="https://www.spreaker.com/s/1aeAFQK5Y8zu"
-  data-resource="show_key=1aeAFQK5Y8zu" data-width="500px" data-height="200px"
+  data-resource="show_key=1aeAFQK5Y8zu" data-width="90%"
   data-theme="dark" data-playlist="false" data-playlist-continuous="false"
   data-autoplay="true" data-live-autoplay="false" data-chapters-image="true"
   data-episode-image-position="left" data-hide-logo="true"

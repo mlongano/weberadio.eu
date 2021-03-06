@@ -7,7 +7,7 @@
     <g-image class="mr-10" alt="Logo3" src="@/assets/images/logo3.png" width="135"  style="height:25px"/>
     <g-image class="mr-10" alt="Logo4" src="@/assets/images/logo4.png" width="135"  style="height:79px"/> -->
   </div>
-    <h1>Webe Radio</h1>
+    <h1 class="text-2xl font-semibold ">Webe Radio</h1>
 
     <p>
       Sito secondario di Webe Radio
