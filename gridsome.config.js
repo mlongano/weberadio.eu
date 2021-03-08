@@ -16,6 +16,7 @@ module.exports = {
   siteName: 'Webe Radio',
   templates: {
     Podcast: '/:title',
+    Episode: '/:podcast_title/:title',
     Tag: '/tag/:id'
   },
 
@@ -26,6 +27,21 @@ module.exports = {
       options: {
         typeName: 'Podcast',
         path: 'content/podcasts/*.md',
+        refs: {
+          // Creates a GraphQL collection from 'tags' in front-matter and adds a reference.
+          tags: {
+            typeName: 'Tag',
+            create: true
+          }
+        }
+      }
+    },
+    {
+      // Create podcasts from markdown files
+      use: '@gridsome/source-filesystem',
+      options: {
+        typeName: 'Episode',
+        path: 'content/episodes/*.md',
         refs: {
           // Creates a GraphQL collection from 'tags' in front-matter and adds a reference.
           tags: {
