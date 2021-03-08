@@ -6,7 +6,7 @@
     <div>
       <a  class="flex justify-start" href="/"
         >
-        <img class="mr-5" src="@/assets/images/logo.png" alt="Logo" width="50px" style="height:37px"/>
+        <img class="mr-5" src="@/assets/images/logo.png" alt="Logo" width="50px" style="height:50px"/>
         <!-- <img class="mr-5" src="../favicon1.png" alt="Logo" width="50px" style="height:50px"/>
         <img class="mr-5" src="../favicon2.png" alt="Logo" width="50px" style="height:59px"/>
         <img class="mr-5" src="../favicon3.png" alt="Logo" width="50px" style="height:50px"/>
