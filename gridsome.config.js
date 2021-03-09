@@ -43,6 +43,7 @@ module.exports = {
         typeName: 'Episode',
         path: 'content/episodes/*.md',
         refs: {
+          pocast: 'Podcast',
           // Creates a GraphQL collection from 'tags' in front-matter and adds a reference.
           tags: {
             typeName: 'Tag',
