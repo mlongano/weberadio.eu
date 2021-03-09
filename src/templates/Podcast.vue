@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <main class="pl-6">
+    <main class="px-6">
       <h1 class="text-2xl mb-6">
         {{ $page.podcast.title }}
       </h1>
