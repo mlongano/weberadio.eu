@@ -2,7 +2,7 @@
   <Layout :show-logo="true">
 
     <!-- List posts -->
-    <div class="podcasts">
+    <div class="pl-6 podcasts">
       <PodcastCard v-for="edge in $page.podcasts.edges" :key="edge.node.id" :podcast="edge.node"/>
     </div>
 

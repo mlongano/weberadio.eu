@@ -1,6 +1,7 @@
 <template>
   <Layout>
-      <h1 class="text-2xl">
+    <main class="pl-6">
+      <h1 class="text-2xl mb-6">
         {{ $page.podcast.title }}
       </h1>
 
@@ -20,6 +21,7 @@
       </div>
 
     <div v-html="$page.podcast.spreaker_embed" />
+    </main>
   </Layout>
 </template>
 

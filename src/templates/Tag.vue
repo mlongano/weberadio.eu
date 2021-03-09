@@ -1,10 +1,10 @@
 <template>
   <Layout>
-    <h1 class="tag-title text-center space-bottom">
-      # {{ $page.tag.title }}
+    <h1 class="mb-6">
+      <span class="inline-block pl-6 text-2xl bg-gray-200 rounded-full px-3 py-1 font-semibold text-gray-700 mr-2 mb-2"> # {{ $page.tag.title }} </span>
     </h1>
 
-    <div class="posts">
+    <div class="pl-6">
       <PodcastCard v-for="edge in $page.tag.belongsTo.edges" :key="edge.node.id" :podcast="edge.node"/>
     </div>
   </Layout>
@@ -18,6 +18,15 @@ query Tag ($id: ID!) {
       edges {
         node {
           ...on Podcast {
+            title
+            path
+            date (format: "D. MMMM YYYY")
+            timeToRead
+            description
+            content
+            cover_image (width: 860, blur: 10)
+          }
+          ...on Episode {
             title
             path
             date (format: "D. MMMM YYYY")

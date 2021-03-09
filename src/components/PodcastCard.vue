@@ -1,6 +1,6 @@
 <template>
 
-  <div class="relative max-w-sm rounded overflow-hidden shadow-lg">
+  <div class="relative max-w-sm rounded overflow-hidden shadow-lg mb-6">
       <g-image alt="Cover image" v-if="podcast.cover_image" class="w-full" :src="podcast.cover_image" />
     <div class="px-6 py-4">
       <div class="font-bold text-xl mb-2" v-html="podcast.title" />
