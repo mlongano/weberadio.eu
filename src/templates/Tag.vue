@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <h1 class="mb-6">
-      <span class="inline-block pl-6 text-2xl bg-gray-200 rounded-full px-3 py-1 font-semibold text-gray-700 mr-2 mb-2"> # {{ $page.tag.title }} </span>
+      <span class="inline-block text-2xl bg-gray-200 rounded-full px-3 py-1 font-semibold text-gray-700 mr-2 mb-2"> # {{ $page.tag.title }} </span>
     </h1>
 
     <div class="px-6">
