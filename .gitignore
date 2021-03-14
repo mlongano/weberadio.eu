@@ -7,5 +7,5 @@ dist
 .env
 .env.*
 .idea
-src/assets/images/Thumbs.db
-src/assets/images/Thumbs.db:encryptable
+Thumbs.db
+Thumbs.db:encryptable
