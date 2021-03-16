@@ -19,7 +19,10 @@ module.exports = {
     Episode: '/:podcast_title/:title',
     Tag: '/tag/:id'
   },
-
+  icon: {
+    favicon: './src/favicon.png',
+    touchicon: './src/touchicon.png'
+  },
   plugins: [
     {
       // Create podcasts from markdown files
