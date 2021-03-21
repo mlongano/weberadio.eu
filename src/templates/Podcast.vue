@@ -105,7 +105,6 @@ query podcast ($id: ID!) {
       path
     }
     description
-    spreaker_embed
     spreaker_id
     content
     cover_image (width: 860, blur: 10)

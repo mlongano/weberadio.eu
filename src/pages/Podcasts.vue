@@ -24,7 +24,7 @@ query {
         timeToRead
         description
         content
-        spreaker_embed
+        spreaker_id
         cover_image (width: 770, height: 380, blur: 10)
         path
         ...on Podcast {
