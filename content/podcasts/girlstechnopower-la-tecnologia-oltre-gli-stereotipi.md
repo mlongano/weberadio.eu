@@ -10,13 +10,5 @@ tags:
 cover_image: ../../static/images/uploads/donald-giannatti-wj1d-qiosee-unsplash.jpg
 description: Gli stereotipi di genere e la tecnologia
 spreaker_id: 1aeAFQK5Y8zu
-spreaker_embed: <a class="spreaker-player"
-  href="https://www.spreaker.com/s/1aeAFQK5Y8zu"
-  data-resource="show_key=1aeAFQK5Y8zu" data-width="100%" data-height="500px"
-  data-theme="dark" data-playlist="true" data-playlist-continuous="false"
-  data-autoplay="false" data-live-autoplay="false" data-chapters-image="true"
-  data-episode-image-position="right" data-hide-logo="false"
-  data-hide-likes="false" data-hide-comments="false" data-hide-sharing="false"
-  data-hide-download="true">Ascolta "#girlstechnopower" su Spreaker.</a>
 ---
 Un podcast dedicato alla riflessione su alcuni stereotipi e sulla percezione rigurdanti la tecnologia

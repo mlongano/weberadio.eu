@@ -42,7 +42,7 @@ collections:
         field: {label: Name, name: name, widget: string, default: "tag"}
       - {label: "Cover Image", name: "cover_image", widget: "image", required: false}
       - {label: "Description", name: "description", widget: "markdown"}
-      - {label: "Spreaker embed code", name: "spreaker_embed", widget: "string", required: false }
+      - {label: "Spreaker Podcas ID", name: "spreaker_id", widget: "string", required: false }
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "episodes" # Used in routes, e.g., /admin/collections/blog
     label: "Episodes" # Used in the UI
@@ -57,9 +57,9 @@ collections:
         name: "podcast"
         widget: "relation"
         collection: "podcasts"
-        search_fields: ['slug', title]
-        value_field: "{{id}}"
-        display_fields: ["slug"]
+        search_fields: ['title', 'slug']
+        value_field: "id"
+        display_fields: ["title"]
       - label: "Episode Number"
         name: "episode_number"
         widget: "number"
@@ -75,5 +75,5 @@ collections:
         field: {label: Name, name: name, widget: string, default: "tag"}
       - {label: "Cover Image", name: "cover_image", widget: "image", required: false}
       - {label: "Description", name: "description", widget: "markdown"}
-      - {label: "Spreaker embed code", name: "spreaker_embed", widget: "string"}
+      - {label: "Spreaker episode ID", name: "spreaker_id", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
