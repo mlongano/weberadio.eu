@@ -58,7 +58,6 @@ collections:
         widget: "relation"
         collection: "podcasts"
         search_fields: ['title', 'slug']
-        value_field: "id"
         display_fields: ["title"]
       - label: "Episode Number"
         name: "episode_number"
