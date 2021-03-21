@@ -22,12 +22,18 @@ query {
         content
         spreaker_embed
         cover_image (width: 770, height: 380, blur: 10)
-        ...on Podcast {
-        id
-        title
         path
+        belongsTo {
+          edges {
+            node {
+              ...on Episode {
+                title
+                path
+                id
+              }
+            }
+          }
         }
-        path
         tags {
           id
           title

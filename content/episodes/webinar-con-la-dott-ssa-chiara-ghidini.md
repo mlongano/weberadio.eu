@@ -1,5 +1,5 @@
 ---
-podcast: girlstechnopower-la-tecnologia-oltre-gli-stereotipi
+podcast: 9e71fd16de81a1fd2d97a61e18d4b978
 date: 2021-02-04
 published: true
 cover_image: ../../static/images/uploads/donald-giannatti-wj1d-qiosee-unsplash.jpg

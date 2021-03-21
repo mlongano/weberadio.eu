@@ -16,7 +16,7 @@ module.exports = {
   siteName: 'Webe Radio',
   templates: {
     Podcast: '/:title',
-    Episode: '/:podcast_title/:title',
+    Episode: '/:title',
     Tag: '/tag/:id'
   },
   icon: {
@@ -40,13 +40,33 @@ module.exports = {
       }
     },
     {
-      // Create podcasts from markdown files
+      // Create episodes for podcasts from markdown files
       use: '@gridsome/source-filesystem',
       options: {
         typeName: 'Episode',
         path: 'content/episodes/*.md',
         refs: {
-          pocast: 'Podcast',
+          podcast: 'Podcast',
+          // Creates a GraphQL collection from 'tags' in front-matter and adds a reference.
+          tags: {
+            typeName: 'Tag',
+            create: true
+          }
+        }
+      }
+    },
+    {
+      // Create posts from markdown files
+      use: '@gridsome/source-filesystem',
+      options: {
+        typeName: 'Post',
+        path: 'content/posts/*.md',
+        remark: {
+          plugins: [
+            [ 'gridsome-plugin-remark-youtube' ]
+          ]
+        },
+        refs: {
           // Creates a GraphQL collection from 'tags' in front-matter and adds a reference.
           tags: {
             typeName: 'Tag',

@@ -58,7 +58,7 @@ collections:
         widget: "relation"
         collection: "podcasts"
         search_fields: ['slug', title]
-        value_field: "{{slug}}"
+        value_field: "{{id}}"
         display_fields: ["slug"]
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Date", name: "date", widget: "datetime"}
