@@ -1,11 +1,15 @@
 <template>
   <Layout :show-logo="true">
-
-    <!-- List posts -->
-    <div class="px-6 podcasts">
-      <PodcastCard v-for="edge in $page.podcasts.edges" :key="edge.node.id" :podcast="edge.node"/>
-    </div>
-
+    <ClientOnly>
+      <!-- List posts -->
+      <div class="px-6 podcasts">
+        <PodcastCard
+          v-for="edge in $page.podcasts.edges"
+          :key="edge.node.id"
+          :podcast="edge.node"
+        />
+      </div>
+    </ClientOnly>
   </Layout>
 </template>
 
@@ -23,13 +27,19 @@ query {
         spreaker_embed
         cover_image (width: 770, height: 380, blur: 10)
         path
-        belongsTo {
+        ...on Podcast {
+          id
+          title
+          path
+        }
+        belongsTo (sortBy: "episode_number", order: DESC) {
           edges {
             node {
               ...on Episode {
                 title
                 path
                 id
+                episode_number
               }
             }
           }
@@ -51,15 +61,14 @@ div.bg-cover {
 </style>
 
 <script>
-import PodcastCard from '~/components/PodcastCard.vue'
+import PodcastCard from "~/components/PodcastCard.vue";
 
 export default {
   components: {
-    PodcastCard
+    PodcastCard,
   },
   metaInfo: {
-    title: 'Podcasts'
+    title: "Podcasts",
   },
-
-}
+};
 </script>

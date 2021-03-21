@@ -1,12 +1,22 @@
 <template>
   <Layout>
-    <h1 class="mb-6">
-      <span class="inline-block text-2xl bg-gray-200 rounded-full px-3 py-1 font-semibold text-gray-700 mr-2 mb-2"> # {{ $page.tag.title }} </span>
-    </h1>
+    <ClientOnly>
+      <h1 class="mb-6">
+        <span
+          class="inline-block text-2xl bg-gray-200 rounded-full px-3 py-1 font-semibold text-gray-700 mr-2 mb-2"
+        >
+          # {{ $page.tag.title }}
+        </span>
+      </h1>
 
-    <div class="px-6">
-      <PodcastCard v-for="edge in $page.tag.belongsTo.edges" :key="edge.node.id" :podcast="edge.node"/>
-    </div>
+      <div class="px-6">
+        <PodcastCard
+          v-for="edge in $page.tag.belongsTo.edges"
+          :key="edge.node.id"
+          :podcast="edge.node"
+        />
+      </div>
+    </ClientOnly>
   </Layout>
 </template>
 
@@ -43,16 +53,16 @@ query Tag ($id: ID!) {
 </page-query>
 
 <script>
-import PodcastCard from '~/components/PodcastCard.vue'
+import PodcastCard from "~/components/PodcastCard.vue";
 
 export default {
   components: {
-    PodcastCard
+    PodcastCard,
   },
   metaInfo: {
-    title: 'Tags'
-  }
-}
+    title: "Tags",
+  },
+};
 </script>
 
 

@@ -15,8 +15,9 @@ if ( process.env.NODE_ENV === 'production' ) postcssPlugins.push( purgecss( requ
 module.exports = {
   siteName: 'Webe Radio',
   templates: {
-    Podcast: '/:title',
-    Episode: '/:title',
+    Podcast: '/podcast/:title',
+    Episode: '/episode/:title',
+    Post: '/post/:title',
     Tag: '/tag/:id'
   },
   icon: {
@@ -50,7 +51,6 @@ module.exports = {
           // Creates a GraphQL collection from 'tags' in front-matter and adds a reference.
           tags: {
             typeName: 'Tag',
-            create: true
           }
         }
       }
@@ -70,7 +70,6 @@ module.exports = {
           // Creates a GraphQL collection from 'tags' in front-matter and adds a reference.
           tags: {
             typeName: 'Tag',
-            create: true
           }
         }
       }

@@ -1,15 +1,12 @@
 <template>
   <Layout>
     <main class="px-6">
-    <h1 class="text-2xl font-semibold ">Webe Radio</h1>
+    <h1 class="text-2xl font-semibold ">WeBe Radio</h1>
 
     <p>
-      Sito secondario di Webe Radio
+      Benvenuti su WeBe Radio
     </p>
 
-    <p class="home-links">
-      <a href="https://www.weberadio.it/" target="_blank" rel="noopener">Sito ufficiale</a>
-    </p>
     </main>
 <footer class="px-6 footer pb-10 text-sm text-gray-300 border-b-8 border-red-800 w-screen"><span>Photo by <a href="https://unsplash.com/@jasonrosewell?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Jason Rosewell</a> on <a href="https://unsplash.com/@jasonrosewell?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span></footer>
   </Layout>
@@ -27,7 +24,7 @@ div.bg-cover {
 <script>
 export default {
   metaInfo: {
-    title: 'Webe Radio'
+    title: 'WeBe Radio'
   }
 }
 </script>

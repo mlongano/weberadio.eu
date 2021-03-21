@@ -9,6 +9,7 @@ tags:
   - tecnologia
 cover_image: ../../static/images/uploads/donald-giannatti-wj1d-qiosee-unsplash.jpg
 description: Gli stereotipi di genere e la tecnologia
+spreaker_id: 1aeAFQK5Y8zu
 spreaker_embed: <a class="spreaker-player"
   href="https://www.spreaker.com/s/1aeAFQK5Y8zu"
   data-resource="show_key=1aeAFQK5Y8zu" data-width="100%" data-height="500px"
