@@ -92,7 +92,7 @@
       <li>
         <h3 class="text-lg mt-4">Fase di formazione/sperimentazione (a.s. 2020/21)</h3>
     <ul class="list-disc list-inside">
-          <li>formazione sutenti e docenti</li>
+          <li>formazione studenti e docenti</li>
           <li>produzione di podcast</li>
           <li>progettazione e attivazione portale dedicato</li>
           <li>attività di speaking</li>
@@ -104,7 +104,7 @@
           <li>produzione di trasmissione live</li>
           <li>produzione di podcast</li>
           <li>consolidamento portale dedicato</li>
-          <li>creazione eventuale app su smatphone</li>
+          <li>creazione eventuale app su smartphone</li>
         </ul>
       </li>
     </ul>

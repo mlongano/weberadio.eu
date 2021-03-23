@@ -38,7 +38,7 @@
     </main>
 
     <footer
-      class="px-6 footer pb-10 text-sm text-gray-300 border-b-8 border-red-800 w-screen"
+      class="px-6 footer lg:absolute bottom-0 pb-10 text-sm text-gray-300 border-b-8 border-red-800 w-screen"
     >
       <span
         >Photo by
@@ -57,10 +57,6 @@
 </template>
 
 <style scoped>
-footer {
-  position: absolute;
-  bottom: 0;
-}
 
 div.bg-cover {
   background-image: url(~@/assets/images/jason-rosewell-ASKeuOZqhYU-unsplash.jpg);

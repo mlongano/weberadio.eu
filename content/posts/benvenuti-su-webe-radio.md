@@ -9,6 +9,10 @@ description: Grande attesa per l'evento del **30 marzo 2021**
 ---
 # Il 30 marzo verrà presentata ufficialmente **WeBe RADIO**.
 
+<iframe src="https://www.youtube.com/embed/mHZ74rH4stg?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=mHZ74rH4stg"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
 
 ## Tre scuole che, prendendo il testimone passato da **IPRASE** lo scorso anno, hanno deciso di lanciarsi sostenute dalla **Fondazione Caritro**
 
