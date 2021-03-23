@@ -37,10 +37,23 @@ query {
   }
 }
 </page-query>
+
 <style scoped>
 div.bg-cover {
   background-image: none;
 }
+</style>
+<style>
+h1 {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.25em;
+  font-weight: 700;
+}
+
 </style>
 
 <script>

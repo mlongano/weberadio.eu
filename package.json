@@ -11,6 +11,7 @@
     "@gridsome/source-filesystem": "^0.6.2",
     "@gridsome/transformer-remark": "^0.6.4",
     "@gridsome/vue-remark": "^0.2.6",
+    "@tailwindcss/aspect-ratio": "^0.2.0",
     "autoprefixer": "^9.8.6",
     "gridsome": "^0.7.0",
     "gridsome-plugin-remark-youtube": "^1.0.1",

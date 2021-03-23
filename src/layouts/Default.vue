@@ -19,23 +19,23 @@
           v-on:toggleMobileMenu="toogleMenu($event)"
         />
         <nav
-          class="absolute md:relative top-16 left-0 md:top-0 z-20 md:flex flex-col md:flex-row md:space-x-6 font-semibold w-full md:w-auto bg-white shadow-md rounded-lg md:bg-opacity-25 p-6 pt-0 md:p-0"
+          class="absolute md:relative top-16 left-0 md:top-0 z-20 md:flex flex-col md:flex-row md:space-x-6 font-semibold w-full md:w-auto bg-white shadow-md rounded-lg md:bg-opacity-25 p-6 pt-0 md:p-0 text-gray-500"
           :class="{ flex: mobileMenuOpen, hidden: !mobileMenuOpen }"
           @click="mobileMenuOpen = true"
         >
           <a
             href="/podcasts/"
-            class="md:pl-2 md:m-auto block text-gray-600 hover:underline"
+            class="md:pl-2 md:m-auto block  hover:underline"
             >Podcasts</a
           >
           <a
             href="/posts/"
-            class="md:pl-2 md:m-auto block text-gray-600 hover:underline"
+            class="md:pl-2 md:m-auto block hover:underline"
             >Blog</a
           >
           <a
             href="/about"
-            class="block md:m-auto md:px-2 text-gray-600 hover:underline"
+            class="block md:m-auto md:px-2 hover:underline"
             >Chi siamo</a
           >
         </nav>
