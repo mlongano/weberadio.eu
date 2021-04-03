@@ -3,19 +3,19 @@
     <div class="relative max-w-sm rounded overflow-hidden shadow-lg mb-6">
       <g-image
         alt="Cover image"
-        v-if="podcast.cover_image"
+        v-if="podcast.cover"
         class="w-full"
-        :src="podcast.cover_image"
+        :src="getStrapiMedia(podcast.cover.url)"
       />
       <div class="px-6 py-4">
         <div class="font-bold text-xl mb-2" v-html="podcast.title" />
-        <div class="text-gray-700 text-xs" v-html="htmlDescription" />
+        <markdown-it-vue class="text-gray-700 text-xs" :content="podcast.description" />
 
         <EpisodesList :podcast="podcast" />
         <Tags :post="podcast" />
         <g-link
           class="link w-1/2 flex items-center justify-center rounded-md bg-black text-white"
-          :to="podcast.path"
+          :to="'podcast/'+podcast.slug"
           >Link</g-link
         >
       </div>
@@ -38,7 +38,7 @@
 <script>
 import Tags from "~/components/Tags";
 import EpisodesList from "~/components/EpisodesList";
-import marked from "marked";
+import { getStrapiMedia } from "~/utils/medias";
 
 export default {
   components: {
@@ -46,10 +46,8 @@ export default {
     EpisodesList,
   },
   props: ["podcast"],
-  data() {
-    return {
-      htmlDescription: marked(this.podcast.description),
-    };
+  methods: {
+    getStrapiMedia,
   },
 };
 </script>

@@ -10,12 +10,12 @@
           <g-image
             class="shadow-lg rounded-lg"
             alt="Cover image"
-            v-if="$page.episode.cover_image"
-            :src="$page.episode.cover_image"
+            v-if="$page.episode.cover"
+            :src="$page.episode.cover.url"
           />
         </div>
 
-        <div class="" v-html="$page.episode.content" />
+        <markdown-it-vue class="text-gray-700 text-xs" :content="$page.episode.description" />
 
         <div class="">
           <Tags :post="$page.episode" />
@@ -57,7 +57,7 @@ export default {
       + 'Ascolta "' + page.episode.title + '" su Spreaker.'+
       '</a>'
       return spreakerCode;
-      }
+      },
   },
   mounted() {
     let spreakerWidgets = document.createElement("script");
@@ -74,26 +74,23 @@ export default {
 
 <page-query>
 query episode ($id: ID!) {
-  episode: episode (id: $id) {
+  episode: strapiEpisode (id: $id) {
     title
-    path
     date (format: "D. MMMM YYYY")
-    timeToRead
     tags {
-      id
-      title
-      path
-    }
-    podcast {
+      name    }
+      podcast {
           title
           id
-          path
     }
 
     description
     spreaker_id
-    content
-    cover_image (width: 860, blur: 10)
+            cover {
+              url
+              width
+              height
+            }
   }
 }
 </page-query>

@@ -15,39 +15,28 @@
 
 <page-query>
 query {
-  podcasts: allPodcast(filter: { published: { eq: true }}) {
+  podcasts: allStrapiPodcast {
+    totalCount
     edges {
       node {
         id
         title
-        date (format: "D. MMMM YYYY")
-        timeToRead
+        slug
+        date
         description
-        content
         spreaker_id
-        cover_image (width: 770, height: 380, blur: 10)
-        path
-        ...on Podcast {
-          id
-          title
-          path
-        }
-        belongsTo (sortBy: "episode_number", order: DESC) {
-          edges {
-            node {
-              ...on Episode {
-                title
-                path
-                id
-                episode_number
-              }
-            }
-          }
+        cover {
+          url
+          width
+          height
         }
         tags {
+					name
+        }
+        episodes {
           id
           title
-          path
+          slug
         }
       }
     }

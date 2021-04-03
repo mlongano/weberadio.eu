@@ -7,11 +7,11 @@
       <div>
         <g-image  class="shadow-lg rounded-lg"
           alt="Cover image"
-          v-if="$page.post.cover_image"
-          :src="$page.post.cover_image"
+          v-if="$page.post.image"
+          :src="$page.post.image.url"
         />
       </div>
-      <div class="" v-html="$page.post.content" />
+      <markdown-it-vue class="text-gray-700 text-xs" :content="$page.post.article" />
 
       <div class="">
         <Tags :post="$page.post" />
@@ -23,15 +23,19 @@
 </template>
 
 <script>
+import Tags from "~/components/Tags";
 
 export default {
+  components: {
+    Tags,
+  },
   metaInfo () {
     return {
       title: this.$page.post.title,
       meta: [
         {
-          name: 'description',
-          content: this.$page.post.description
+          name: "description",
+          content: this.$page.post.description,
         }
       ]
     }
@@ -41,19 +45,16 @@ export default {
 
 <page-query>
 query Post ($id: ID!) {
-  post: post (id: $id) {
+  post: strapiPost (id: $id) {
     title
-    path
+    subtitle
     date (format: "D. MMMM YYYY")
-    timeToRead
-    tags {
-      id
-      title
-      path
+    article
+    image {
+      url
+      width
+      height
     }
-    description
-    content
-    cover_image (width: 860, blur: 10)
   }
 }
 </page-query>

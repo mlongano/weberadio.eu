@@ -7,18 +7,14 @@
     "explore": "gridsome explore"
   },
   "dependencies": {
-    "@gridsome/remark-prismjs": "^0.5.0",
     "@gridsome/source-filesystem": "^0.6.2",
-    "@gridsome/transformer-remark": "^0.6.4",
-    "@gridsome/vue-remark": "^0.2.6",
+    "@gridsome/source-strapi": "^0.2.0",
     "@tailwindcss/aspect-ratio": "^0.2.0",
     "autoprefixer": "^9.8.6",
     "gridsome": "^0.7.0",
-    "gridsome-plugin-remark-youtube": "^1.0.1",
-    "marked": "^2.0.1",
+    "markdown-it-vue": "^1.1.6",
     "postcss": "^7.0.35",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.3",
-    "vue-markdown-render": "^1.1.1"
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.3"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^3.0.0"

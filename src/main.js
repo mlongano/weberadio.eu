@@ -4,11 +4,13 @@
 require( '~/main.css' );
 
 import DefaultLayout from '~/layouts/Default.vue';
-import VueMarkdown from 'vue-markdown-render'
+import MarkdownItVueLight from 'markdown-it-vue/dist/markdown-it-vue-light.umd.min.js'
+import 'markdown-it-vue/dist/markdown-it-vue-light.css'
 
 export default function (Vue, { router, head, isClient }) {
   // Set default layout as a global component
-  Vue.component( 'Layout', DefaultLayout , VueMarkdown);
+  Vue.component( 'Layout', DefaultLayout );
+  Vue.component( 'markdown-it-vue', MarkdownItVueLight );
   head.link.push( {
     rel: 'preconnect',
     href: 'https://fonts.gstatic.com'

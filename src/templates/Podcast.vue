@@ -10,15 +10,14 @@
           <g-image
             class="shadow-lg rounded-lg"
             alt="Cover image"
-            v-if="$page.podcast.cover_image"
-            :src="$page.podcast.cover_image"
+            v-if="$page.podcast.cover"
+            :src="$page.podcast.cover.url"
           />
         </div>
-
-        <div class="" v-html="$page.podcast.content" />
+        <markdown-it-vue class="text-gray-700 text-xs" :content="$page.podcast.description" />
 
         <div>
-        <EpisodesList :podcast="$page.podcast" />
+          <EpisodesList :podcast="$page.podcast" />
         </div>
         <div class="">
           <Tags :post="$page.podcast" />
@@ -51,18 +50,21 @@ export default {
     };
   },
   computed: {
-    spreakerEmbed () {
+    spreakerEmbed() {
       let page = this.$page;
       let spreakerId = page.podcast.spreaker_id;
-       let spreakerCode = '<a class="spreaker-player"  href="https://www.spreaker.com/s/'
-      + spreakerId
-      +'" data-resource="show_key='
-      + spreakerId
-      +'" data-width="100%" data-height="500px" data-theme="dark" data-playlist="true" data-playlist-continuous="false" data-autoplay="false" data-live-autoplay="false" data-chapters-image="true" data-episode-image-position="left" data-hide-logo="false" data-hide-likes="false" data-hide-comments="false" data-hide-sharing="false" data-hide-download="true">'
-      + 'Ascolta "' + page.podcast.title + '" su Spreaker.'+
-      '</a>'
+      let spreakerCode =
+        '<a class="spreaker-player"  href="https://www.spreaker.com/s/' +
+        spreakerId +
+        '" data-resource="show_key=' +
+        spreakerId +
+        '" data-width="100%" data-height="500px" data-theme="dark" data-playlist="true" data-playlist-continuous="false" data-autoplay="false" data-live-autoplay="false" data-chapters-image="true" data-episode-image-position="left" data-hide-logo="false" data-hide-likes="false" data-hide-comments="false" data-hide-sharing="false" data-hide-download="true">' +
+        'Ascolta "' +
+        page.podcast.title +
+        '" su Spreaker.' +
+        "</a>";
       return spreakerCode;
-      }
+    },
   },
 
   mounted() {
@@ -81,33 +83,26 @@ export default {
 
 <page-query>
 query podcast ($id: ID!) {
-  podcast: podcast (id: $id) {
+  podcast: strapiPodcast (id: $id) {
     title
-    path
+    slug
     date (format: "D. MMMM YYYY")
-    timeToRead
-    belongsTo (sortBy: "episode_number", order: DESC) {
-      edges {
-        node {
-          ...on Episode {
+    episodes {
             title
-            path
+            slug
             id
             episode_number
-          }
         }
-      }
-    }
-
     tags {
-      id
-      title
-      path
+      name
     }
     description
     spreaker_id
-    content
-    cover_image (width: 860, blur: 10)
+    cover {
+      url
+      width
+      height
+    }
   }
 }
 </page-query>

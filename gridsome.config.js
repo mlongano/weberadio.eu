@@ -14,18 +14,15 @@ if ( process.env.NODE_ENV === 'production' ) postcssPlugins.push( purgecss( requ
 
 module.exports = {
   siteName: 'Webe Radio',
+  siteDescription: 'La scuola che si ascolta',
   templates: {
-    Podcast: '/podcast/:title',
-    Episode: '/episode/:title',
-    Post: '/post/:title',
-    Tag: '/tag/:id'
   },
   icon: {
     favicon: './src/favicon.png',
     touchicon: './src/touchicon.png'
   },
   plugins: [
-    {
+    /* {
       // Create podcasts from markdown files
       use: '@gridsome/source-filesystem',
       options: {
@@ -73,6 +70,27 @@ module.exports = {
           }
         }
       }
+    }, */
+
+    {
+      use: '@gridsome/source-strapi',
+      options: {
+        apiURL: 'http://api.webe.radio:1337',
+        queryLimit: 1000, // Defaults to 100
+        contentTypes: [ 'post', 'podcast', 'episode', 'tag' ],
+        // Possibility to login with a Strapi user,
+        // when content types are not publicly available (optional).
+        loginData: {
+          identifier: '',
+          password: ''
+        },
+        remark: {
+          plugins: [
+            '@gridsome/remark-prismjs',
+            'gridsome-plugin-remark-youtube'
+          ]
+        },
+      }
     },
 
   ],
@@ -82,5 +100,13 @@ module.exports = {
         plugins: postcssPlugins,
       },
     },
+  },
+  transformers: {
+    remark: {
+      autolinkClassName: 'icon icon-link heading-anchor',
+      externalLinksTarget: '_blank',
+      externalLinksRel: [ 'noopener', ],
+      anchorClassName: 'icon icon-link',
+    }
   },
 }

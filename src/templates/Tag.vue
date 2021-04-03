@@ -5,15 +5,15 @@
         <span
           class="inline-block text-2xl bg-gray-200 rounded-full px-3 py-1 font-semibold text-gray-700 mr-2 mb-2"
         >
-          # {{ $page.tag.title }}
+          # {{ $page.tags.edges[0].node.name }}
         </span>
       </h1>
 
       <div class="px-6">
         <PodcastCard
-          v-for="edge in $page.tag.belongsTo.edges"
-          :key="edge.node.id"
-          :podcast="edge.node"
+          v-for="podcast in $page.tags.edges[0].node.podcasts"
+          :key="podcast.id"
+          :podcast="podcast"
         />
       </div>
     </ClientOnly>
@@ -21,30 +21,35 @@
 </template>
 
 <page-query>
-query Tag ($id: ID!) {
-  tag (id: $id) {
-    title
-    belongsTo {
-      edges {
-        node {
-          ...on Podcast {
-            title
-            path
-            date (format: "D. MMMM YYYY")
-            timeToRead
-            description
-            content
-            cover_image (width: 860, blur: 10)
+query ($name: String!) {
+  tags: allStrapiTag (
+    filter: { name: {eq: $name} }
+  ) {
+    edges {
+      node {
+        id
+        name
+        episodes {
+          id
+          title
+          slug
+        }
+        podcasts {
+          id
+          title
+          slug
+          description
+          cover {
+            url
+            width
+            height
           }
-          ...on Episode {
-            title
-            path
-            date (format: "D. MMMM YYYY")
-            timeToRead
-            description
-            content
-            cover_image (width: 860, blur: 10)
-          }
+
+        }
+        posts {
+          id
+          title
+          slug
         }
       }
     }

@@ -11,26 +11,17 @@
 
 <page-query>
 query {
-  posts: allPost(filter: { published: { eq: true }}) {
+  posts: allStrapiPost {
     edges {
       node {
         id
         title
         date (format: "D. MMMM YYYY")
-        timeToRead
-        description
-        content
-        cover_image (width: 770, height: 380, blur: 10)
-        ...on Post {
-          id
-          title
-          path
-        }
-        path
-        tags {
-          id
-          title
-          path
+        article
+        image {
+          url
+          width
+          height
         }
       }
     }
@@ -43,24 +34,14 @@ div.bg-cover {
   background-image: none;
 }
 </style>
-<style>
-h1 {
-  font-size: 1.5em;
-  font-weight: 700;
-}
-
-h2 {
-  font-size: 1.25em;
-  font-weight: 700;
-}
-
-</style>
 
 <script>
+import Tags from "~/components/Tags";
 import PostCard from '~/components/PostCard.vue'
 
 export default {
   components: {
+    Tags,
     PostCard
   },
   metaInfo: {
