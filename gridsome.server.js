@@ -37,7 +37,7 @@ module.exports = function ( api ) {
 
     data.allStrapiPost.edges.forEach( ( { node } ) => {
       createPage( {
-        path: `/blog/${node.slug}`,
+        path: `/post/${node.slug}`,
         component: './src/templates/Post.vue',
         context: {
           slug: node.slug,

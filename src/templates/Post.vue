@@ -5,7 +5,7 @@
         {{ $page.post.title }}
       </h1>
       <div>
-        <g-image  class="shadow-lg rounded-lg"
+        <g-image  class="shadow-lg rounded-lg lg:w-4/6"
           alt="Cover image"
           v-if="$page.post.image"
           :src="$page.post.image.url"

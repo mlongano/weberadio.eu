@@ -16,12 +16,16 @@ query {
       node {
         id
         title
+        slug
         date (format: "D. MMMM YYYY")
         article
         image {
           url
           width
           height
+        }
+        tags {
+					name
         }
       }
     }
