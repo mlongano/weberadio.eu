@@ -8,7 +8,7 @@
       <div class="lg:w-6/12 lg:mr-2">
         <div class="aspect-w-16 aspect-h-9 shadow-xl">
           <iframe
-            src="https://www.youtube.com/embed/-WQlSXFlYLw?controls=0&showinfo=0&rel=0&autoplay=0&loop=1&playlist=mHZ74rH4stg"
+            src="https://www.youtube.com/embed/eI7DN3scviQ?controls=0&showinfo=0&rel=0&autoplay=0&loop=1&playlist=mHZ74rH4stg"
             frameborder="0"
             allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
