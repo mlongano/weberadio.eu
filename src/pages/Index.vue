@@ -5,17 +5,39 @@
 
       <h2>Benvenuti su WeBe Radio</h2>
   <div class="flex flex-col lg:flex-row justify-center w-9/12 mx-auto mt-10">
-      <div class="lg:w-6/12 lg:mr-2">
+      <div class="mb-2 lg:w-6/12 lg:mr-2 flex-grow">
         <div class="aspect-w-16 aspect-h-9 shadow-xl">
           <iframe
-            src="https://www.youtube.com/embed/eI7DN3scviQ?controls=0&showinfo=0&rel=0&autoplay=0&loop=1&playlist=mHZ74rH4stg"
+            src="https://www.youtube.com/embed/eI7DN3scviQ?controls=0&showinfo=0&rel=0&autoplay=0&loop=1&playlist=PL_MtOuQ1lY4RKzEg-hRVWlgTbEXHGDrgm"
             frameborder="0"
             allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
           ></iframe>
         </div>
       </div>
-      <div class="bg-black bg-opacity-70 text-white px-4 py-4 text-justify w-auto lg:w-6/12 shadow-xl">
+      <div class="mb-2 lg:w-6/12 lg:mr-2">
+        <div class="aspect-w-16 aspect-h-9 shadow-xl">
+          <iframe
+            src="https://www.youtube.com/embed/-WQlSXFlYLw?controls=0&showinfo=0&rel=0&autoplay=0&loop=1&playlist=PL_MtOuQ1lY4RKzEg-hRVWlgTbEXHGDrgm"
+            frameborder="0"
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+
+      <div class="mb-2 lg:w-6/12 lg:mr-2">
+        <div class="aspect-w-16 aspect-h-9 shadow-xl">
+          <iframe
+            src="https://www.youtube.com/embed/mHZ74rH4stg?controls=0&showinfo=0&rel=0&autoplay=0&loop=1&playlist=PL_MtOuQ1lY4RKzEg-hRVWlgTbEXHGDrgm"
+            frameborder="0"
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+
+      <div class="bg-black bg-opacity-70 text-white px-4 py-4 text-justify w-auto lg:w-6/12 lg:mr-2 shadow-xl">
         <h1 class="text-3xl font-bold text-left">Kick off WeBe Radio</h1>
         <p>
           Il progetto <b>WeBe RADIO</b> mira alla realizzazione di una web radio,
@@ -34,7 +56,9 @@
           poliedrico e multidisciplinare che permette di allenare competenze sia
           tecniche che comunicative.
         </p>
-      </div></div>
+      </div>
+
+      </div>
     </main>
 
     <footer
@@ -57,7 +81,6 @@
 </template>
 
 <style scoped>
-
 div.bg-cover {
   background-image: url(~@/assets/images/jason-rosewell-ASKeuOZqhYU-unsplash.jpg);
 }

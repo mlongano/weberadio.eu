@@ -9,7 +9,7 @@
       />
       <div class="px-6 py-4">
         <div class="font-bold text-xl mb-2" v-html="podcast.title" />
-        <markdown-it-vue class="text-gray-700 text-xs" :content="podcast.description" />
+        <markdown-it-vue class="text-gray-700 dark:text-gray-50 text-xs" :content="podcast.description" />
 
         <EpisodesList :podcast="podcast" />
         <Tags :post="podcast" />
