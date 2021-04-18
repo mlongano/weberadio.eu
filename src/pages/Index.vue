@@ -2,24 +2,23 @@
 <Layout>
     <main class="px-6">
         <h1 class="text-2xl font-semibold">WeBe Radio</h1>
-
         <h2>Benvenuti su WeBe Radio</h2>
         <div class="w-9/12 mx-auto mt-10">
             <div class="mb-2 max-w-screen-sm mx-auto">
                 <div class="aspect-w-16 aspect-h-9 shadow-xl">
-                    <iframe src="https://www.youtube.com/embed/eI7DN3scviQ?controls=0&showinfo=0&rel=0&autoplay=0&loop=1&playlist=PL_MtOuQ1lY4RKzEg-hRVWlgTbEXHGDrgm" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube-nocookie.com/embed/eI7DN3scviQ?controls=0&showinfo=0&rel=0&autoplay=0&loop=1&playlist=PL_MtOuQ1lY4RKzEg-hRVWlgTbEXHGDrgm" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
             <div class="flex flex-row flex-wrap">
 
                 <div class="mb-2 w-1/2">
-                    <div class="aspect-w-16 aspect-h-9 shadow-xl">
-                        <iframe src="https://www.youtube.com/embed/-WQlSXFlYLw?controls=0&showinfo=0&rel=0&autoplay=0&loop=1&playlist=PL_MtOuQ1lY4RKzEg-hRVWlgTbEXHGDrgm" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="aspect-w-16 aspect-h-9 shadow-xl mr-1.5">
+                        <iframe src="https://www.youtube-nocookie.com/embed/-WQlSXFlYLw?controls=0&showinfo=0&rel=0&autoplay=0&loop=1&playlist=PL_MtOuQ1lY4RKzEg-hRVWlgTbEXHGDrgm" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
                 <div class="mb-2 w-1/2">
-                    <div class="aspect-w-16 aspect-h-9 shadow-xl">
-                        <iframe src="https://www.youtube.com/embed/mHZ74rH4stg?controls=0&showinfo=0&rel=0&autoplay=0&loop=1&playlist=PL_MtOuQ1lY4RKzEg-hRVWlgTbEXHGDrgm" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="aspect-w-16 aspect-h-9 shadow-xl ml-1.5">
+                        <iframe src="https://www.youtube-nocookie.com/embed/mHZ74rH4stg?controls=0&showinfo=0&rel=0&autoplay=0&loop=1&playlist=PL_MtOuQ1lY4RKzEg-hRVWlgTbEXHGDrgm" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
 
